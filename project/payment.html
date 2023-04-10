@@ -1,0 +1,184 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href=".css/style.css" />
+    <title> Credit Card Form</title>
+    <style>@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: "Poppins", sans-serif;
+        }
+        
+        body {
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+          background: url("images/bgi.jpg") center/cover;
+          overflow: hidden;
+        }
+        
+        .card {
+          
+          background: url("images/color2.jpg") center/cover;
+          
+          padding: 1.5rem;
+          border-radius: 1rem;
+          
+        }
+        
+        .card__row {
+          display: flex;
+          justify-content: space-between;
+          padding-bottom: 2rem;
+        }
+        
+        .card__title {
+          font-weight: 600;
+          font-size: 2.5rem;
+          color: #c41212;
+          margin: 1rem 0 1.5rem;
+          text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+        }
+        
+        .card__col {
+          padding-right: 2rem;
+        }
+        
+        .card__input {
+          background: none;
+          border: none;
+          border-bottom: dashed 0.2rem rgba(255, 255, 255, 0.15);
+          font-size: 1.2rem;
+          color: #fff;
+          text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+        }
+        .card__input--large {
+          font-size: 2rem;
+        }
+        
+        .card__input::placeholder {
+          color: rgba(255, 255, 255, 0.5);
+          text-shadow: none;
+        }
+        
+        .card__input:focus {
+          outline: none;
+          border-color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .card__label {
+          display: block;
+          color: #fff;
+          text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+          font-weight: 400;
+        }
+        
+        .card__chip {
+          align-self: flex-end;
+        }
+        
+        .card__chip img {
+          width: 3rem;
+        }
+        
+        .form button{
+     background-color: transparent;
+     border:  3px;
+     color: transparent;
+     display: block;
+     width: 100%;
+}</style>
+  </head>
+  <body>
+    <script>
+      function checkpayment(){
+       
+        var valid=true,field="";
+        field=document.getElementById("cardNumber");
+        if(!field.checkValidity()){
+          
+          valid=false;
+        }
+        
+        field=document.getElementById("cardExpiry");
+        if(!field.checkValidity()){
+          
+          valid=false;
+        }
+        field=document.getElementById("cardCcv");
+        if(!field.checkValidity()){
+         
+          valid=false;
+        }
+        if(valid==true){
+         
+          window.location.href="thank.html";
+        }
+        else{
+          alert("Please enter valid card data");
+        }
+    }
+    </script>
+      
+    <div class="card">
+     
+        <h1 class="card__title">Enter Payment Information</h1>
+        <div class="card__row">
+          <div class="card__col">
+            <label for="cardNumber" class="card__label">Card Number</label
+            ><input
+              type="text"
+              class="card__input card__input--large"
+              id="cardNumber"
+              placeholder="xxxx-xxxx-xxxx-xxxx" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" required
+            />
+          </div>
+          <div class="card__col card__chip">
+            <img src="images/chip.png" alt="chip" />
+          </div>
+        </div>
+        <div class="card__row">
+          <div class="card__col">
+            <label for="cardExpiry" class="card__label">Expiry Date</label
+            ><input
+              type="text"
+              class="card__input"
+              id="cardExpiry"
+              placeholder="xx/xx" pattern="[0-9]{2}/[0-9]{2}" required
+            />
+          </div>
+          <div class="card__col">
+            <label for="cardCcv" class="card__label">CVV</label
+            ><input
+              type="text"
+              class="card__input"
+              id="cardCcv"
+              placeholder="xxx" pattern="[0-9]{3}" required
+            />
+          </div>
+          
+          <!-- <div class="card__col card__brand"><i id="cardBrand"></i></div>-->
+        </div> 
+        <div class="card__row">
+        <button onclick="checkpayment()"> Submit </button>
+      </div>
+        
+      
+    </div>
+
+    
+  </body>
+</html>

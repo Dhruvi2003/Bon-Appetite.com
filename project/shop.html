@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <!--Custom Style -->
+    <link rel="stylesheet" href= "./css/style.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+     crossorigin="anonymous"
+     />
+     <script src="https://kit.fontawesome.com/55bdff1f0b.js" crossorigin="anonymous"></script></script>
+    
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    
+    <!--Custom Javascript File-->
+    <script src="./js/main.js"></script>
+	<script src="./js/slider.js"></script>
+    <!-----Navigation------------->
+    <header id="header" >
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+			<li><a href="login.html">LOGIN</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="cart.html">CART</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <div class="image"></div>
+
+<a href="#" class="logo"><img src="images/logo.jpg" alt=""></a>
+
+</header>
+ 
+	<div class="slider">
+		<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-interval="10000">
+      <img src="images/oil.jpg" class="d-block w-100" alt="..." style="width:auto;height:800px;">
+    </div>
+   
+  </div>
+</div>
+	</div>
+		
+
+
+
+
+	<!------Featured Categories----->
+	<section class="featured-categories">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+				<img src="images/juic.jpg">
+				</div>
+				<div class="col-md-3">
+				<img src="images/tofu.jpg">
+				</div>
+				<div class="col-md-3">
+				<img src="images/brocoli.jpg">
+				</div>
+				<div class="col-md-3">
+				<img src="images/df.jpg">
+				</div>
+				
+			
+			</div>
+		
+		</div>
+	</section>
+	
+	
+<section class="new-arrivals">
+<div id="site">
+	<div class="container">
+		<div class="title-box">
+		<h2>New Arrivals</h2>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+			<div class="product-top">
+				<img src="images/cholamasala.jpg">
+				
+			</div>
+			
+			
+			<div class="product-bottom text-center">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-half-o"></i>
+			<h3>Chole Masala</h3>
+			<div class="product-description" data-name="Chole Masala" data-price="80">
+				
+				<p class="product-price">Rs 80</p>
+				<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-2">Quantity</label>
+								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+						
+			</div>
+			</div>
+			</div>
+			
+			
+			
+			<div class="col-md-3">
+			<div class="product-top">
+				<img src="images/chanadal.jpg">
+				
+			</div>
+			
+			
+			<div class="product-bottom text-center">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-half-o"></i>
+			<h3>Chana Dal</h3>
+			<div class="product-description" data-name="Chana Dal" data-price="50">
+				
+				<p class="product-price">Rs 50</p>
+				<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-2">Quantity</label>
+								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+						
+			</div>
+			</div>
+			</div>
+
+
+
+			<div class="col-md-3">
+			<div class="product-top">
+				<img src="images/bread.jpg">
+				
+			</div>
+			
+			
+			<div class="product-bottom text-center">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-half-o"></i>
+			<h3>Multigrain Bread</h3>
+			<div class="product-description" data-name="Multigrain Bread" data-price="65">
+				
+				<p class="product-price">Rs 65</p>
+				<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-2">Quantity</label>
+								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+						
+			</div>
+			</div>
+			</div>
+
+
+
+			<div class="col-md-3">
+			<div class="product-top">
+				<img src="images/noodle.jpg">
+				
+			</div>
+			
+			
+			<div class="product-bottom text-center">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-half-o"></i>
+			<h3>Atta noodles</h3>
+			<div class="product-description" data-name="Atta Noodles" data-price="98">
+				<p class="product-price">Rs 98</p>
+				<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-2">Quantity</label>
+								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+						
+			</div>
+			</div>
+			</div>			
+
+		</div>
+
+
+
+	<div class="row">
+			<div class="col-md-3">
+			<div class="product-top">
+				<img src="images/rajma.png">
+				
+			</div>
+			
+			
+			<div class="product-bottom text-center">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-half-o"></i>
+			<h3>Rajma</h3>
+			<div class="product-description" data-name="Rajma" data-price="85">
+				
+				<p class="product-price">Rs 85</p>
+				<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-2">Quantity</label>
+								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+						
+			</div>
+			</div>
+			</div>
+
+			
+			<div class="col-md-3">
+			<div class="product-top">
+				<img src="images/ketchup.jpg">
+				
+			</div>
+			
+			
+			<div class="product-bottom text-center">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-half-o"></i>
+			<h3>Ketchup</h3>
+			<div class="product-description" data-name="Ketchup" data-price="80">
+				
+				<p class="product-price">Rs 80</p>
+				<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-2">Quantity</label>
+								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+						
+			</div>
+			</div>
+			</div>
+
+
+
+			<div class="col-md-3">
+			<div class="product-top">
+				<img src="images/haldi.jpg">
+				
+			</div>
+			
+			
+			<div class="product-bottom text-center">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-half-o"></i>
+			<h3>Haldi</h3>
+			<div class="product-description" data-name="Haldi" data-price="40">
+				
+				<p class="product-price">Rs 40</p>
+				<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-2">Quantity</label>
+								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+						
+			</div>
+			</div>
+			</div>
+
+
+
+			<div class="col-md-3">
+			<div class="product-top">
+				<img src="images/vinegar.jpg">
+				
+			</div>
+			
+			
+			<div class="product-bottom text-center">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-half-o"></i>
+			<h3>Vinegar</h3>
+			<div class="product-description" data-name="Vinegar" data-price="78">
+				
+				<p class="product-price">Rs 78</p>
+				<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-2">Quantity</label>
+								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+						
+			</div>
+			</div>
+			</div>	
+		</div>
+
+
+
+
+
+
+	</div>
+</div>
+</section>
+	
+	
+<section class="on-sale">
+<div id="site">
+	<div class="container">
+		<div class="title-box">
+		<h2>On Sale</h2>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+			<div class="product-top">
+				<img src="images/milk.jpg">
+				
+			</div>
+			
+			
+			<div class="product-bottom text-center">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-half-o"></i>
+			<h3>Milk</h3>
+			<div class="product-description" data-name="Milk" data-price="30">
+				
+				<p class="product-price">Rs 30</p>
+				<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-2">Quantity</label>
+								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+						
+			</div>
+			</div>
+			</div>
+
+			
+			<div class="col-md-3">
+			<div class="product-top">
+				<img src="images/paneer.jpg">
+				
+			</div>
+			
+			
+			<div class="product-bottom text-center">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-half-o"></i>
+			<h3>Paneer</h3>
+			
+			<div class="product-description" data-name="Paneer" data-price="60">
+				
+				<p class="product-price">Rs 60</p>
+				<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-2">Quantity</label>
+								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+						
+			</div>
+			</div>
+			</div>
+
+
+
+			<div class="col-md-3">
+			<div class="product-top">
+				<img src="images/salt.jpg">
+				
+			</div>
+			
+			
+			<div class="product-bottom text-center">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-half-o"></i>
+			<h3>Salt</h3>
+			<div class="product-description" data-name="Salt" data-price="20">
+				
+				<p class="product-price">Rs 20</p>
+				<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-2">Quantity</label>
+								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+						
+			</div>
+			</div>
+			</div>
+
+
+
+			<div class="col-md-3">
+			<div class="product-top">
+				<img src="images/cheese.jpg">
+				
+			</div>
+			
+			
+			<div class="product-bottom text-center">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-half-o"></i>
+			<h3>Cheese</h3>
+			<div class="product-description" data-name="Cheese" data-price="80">
+				
+				<p class="product-price">Rs 80</p>
+				<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-2">Quantity</label>
+								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+						
+			</div>
+			</div>
+			</div>			
+
+		</div>
+
+
+
+	<div class="row">
+			<div class="col-md-3">
+			<div class="product-top">
+				<img src="images/egg.jpg">
+				<div class="overlay-right">
+					<button type="button" class="btn btn-secondary" title="Quick Shop">
+					<i class="fa fa-eye"></i>
+					</button>
+					
+					<button type="button" class="btn btn-secondary" title="Add to Wishlist">
+					<i class="fa fa-heart-o"></i>
+					</button>
+					
+					
+				</div>
+			</div>
+			
+			
+			<div class="product-bottom text-center">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-half-o"></i>
+			<h3>Eggs</h3>
+			<div class="product-description" data-name="Eggs" data-price="20">
+				
+				<p class="product-price">Rs 20</p>
+				<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-2">Quantity</label>
+								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+						
+			</div>
+			</div>
+			</div>
+
+			
+			<div class="col-md-3">
+			<div class="product-top">
+				<img src="images/badam.jpg">
+				
+			</div>
+			
+			
+			<div class="product-bottom text-center">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-half-o"></i>
+			<h3>Badam</h3>
+			<div class="product-description" data-name="Badam" data-price="80">
+				
+				<p class="product-price">Rs 80</p>
+				<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-2">Quantity</label>
+								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+						
+			</div>
+			</div>
+			</div>
+
+
+
+			<div class="col-md-3">
+			<div class="product-top">
+				<img src="images/juice.jpg">
+				
+			</div>
+			
+			
+			<div class="product-bottom text-center">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-half-o"></i>
+			<h3>Mango Juice</h3>
+			<div class="product-description" data-name="Mango Juice" data-price="71">
+				
+				<p class="product-price">Rs 71</p>
+				<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-2">Quantity</label>
+								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+						
+			</div>
+			</div>
+			</div>
+
+
+
+			<div class="col-md-3">
+			<div class="product-top">
+				<img src="images/jam.jpg">
+				
+			</div>
+			
+			
+			<div class="product-bottom text-center">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-half-o"></i>
+			<h3>Jam</h3>
+			
+			<div class="product-description" data-name="Jam" data-price="55">
+				
+				<p class="product-price">Rs 55</p>
+				<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-2">Quantity</label>
+								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+						
+			</div>
+			</div>
+			</div>	
+		</div>
+
+
+
+
+
+
+	</div>
+</div>
+</section>
+	
+	
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+<!------About Section------->	
+	<section id="about">
+	<div class="container">
+		<div class="row">
+			
+			
+			
+			
+			<div class="col-md-6 skills-bar">
+			<p>Delivery Rate</p>
+			<div class="progress">
+			<div class="progress-bar" style="width:85%;">85%</div>
+			</div>
+			
+			<p>Customer Growth</p>
+			<div class="progress">
+			<div class="progress-bar" style="width:75%;">75%</div>
+			</div>
+			
+			<p>Happy Employee</p>
+			<div class="progress">
+			<div class="progress-bar" style="width:90%;">90%</div>
+			</div>
+			
+			</div>
+		</div>
+		
+	</div>	
+		
+<!-- ----Services Section------->		
+	 <section id="services">
+	
+		<div class="container">
+			<h1>Our Services</h1>
+			<div class="row services" >
+				<div class= "col-md-4 text-center">
+					<div class="icon">
+					<i class="fa fa-phone"></i>
+					</div>
+					<h3> 24/7 Support</h3>
+					<p>on order related queries</p>
+				</div>
+			
+				<div class="col-md-4 text-center">
+					<div class="icon">
+					<i class="fa fa-shopping-cart"></i>
+					</div>
+					<h3> Return within 30 days</h3>
+					<p>of receiving your order</p>
+				</div>
+			
+				<div class="col-md-4 text-center">
+					<div class="icon">
+					<i class="fa fa-truck"></i>
+					</div>
+					<h3>Get free delivery</h3>
+					<p>on orders above Rs 500</p>
+				</div>
+			</div>
+		</div>
+	
+	</section> 
+    <section id="footer" class="container-fluid">
+    
+        <div class="row align-items-center">
+        
+        <div class="col-md-4 brand">
+        
+        <a href="#" class="logo"><img src="images/logo.jpg" alt=""></a>
+        
+        <div class="icons">
+			<a href="login.html" class="fab fa-facebook-square"></a>
+			<a href="login.html" class="fab fa-twitter-square"></a>
+			<a href="login.html" class="fab fa-instagram-square"></a>
+			<a href="login.html" class="fab fa-pinterest-square"></a>
+		</div>
+        
+        </div>
+        
+        <div class="col-md-4 footer-links">
+        <h3>links:</h3>
+        <a href="index.html">HOME</a>
+                <a href="blog.html">BLOG</a>
+                <a href="about.html">ABOUT</a>
+                <a href="dish.html">DISH</a>
+                <a href="contact.html">CONTACT US</a>
+        
+        </div>
+        
+        <div class="col-md-4 text-center text-md-left letter">
+        <h2>newsletter</h2>
+        <input type="text" required><br>
+        <input type="submit" value="subscribe">
+        </div>
+        
+        </div>
+        
+        <h1>&copy; copyright @ 2021 by <span> Dhruvi</span></h1>
+        
+        </section>
+        
+        <!-- footer section ends  -->
+    
+    <!-- special card section ends  -->
+
+</body>
+</html>

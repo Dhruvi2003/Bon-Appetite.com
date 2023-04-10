@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href= "./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+     crossorigin="anonymous"
+     />
+     <script src="https://kit.fontawesome.com/55bdff1f0b.js" crossorigin="anonymous"></script></script>
+    <style>
+    
+    .email-signup-thankyou{
+        font-family:sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background: rgb(180, 79, 79);
+        background:url('images/img.jpg') ;
+          background-size:absolute;
+        padding:10%;
+    }
+        
+        .content{
+          margin: auto;  /* Magic! */
+          max-width:600px;
+          color:rgb(0, 0, 0);
+          box-shadow: 0 3px 6px rgba(0,0,0,0.55), 0 3px 6px rgba(0,0,0,0.23);
+          background: rgb(180, 79, 79);
+          text-align:center;
+          position: relative;
+          padding:10%;
+          
+        }
+      
+          .left-hole,.right-hole{
+            position: absolute;
+            width:20px; height:20px;
+            background:rgb(0, 0, 0);
+            border-radius:50%;
+            top:15px;
+          }
+          .left-hole{
+            left:15px;
+            top:10px;
+          }
+          .right-hole{
+            right:15px;
+            top:10px;
+          }
+          h2,h3{
+            font-size: 2em;
+            text-align:left;
+            padding:5% 5% 0% 3%;
+            color:rgb(0, 0, 0);
+            font-weight:900;
+          }
+          .main-content h1{
+              color:rgb(0, 0, 0);
+              text-transform:uppercase;
+              margin-top:2%;
+              font-size: 2.5em;
+              font-weight:900;
+          }
+          #thank
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    width:280px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius:12px;
+}
+ 
+      </style>
+</head>
+<body>
+   
+    <header id="header" >
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="cart.html">CART</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <div class="image"></div>
+
+<a href="#" class="logo"><img src="images/logo.jpg" alt=""></a>
+
+</header>
+<div class="email-signup-thankyou">
+    <div class="content">
+      <div class="left-hole"></div>
+      <div class="right-hole"></div>
+      <div class="main-content">
+        <h1>Success! You are signed-up.</h1>
+      <p>Thank you for signing-up, it means a lot to us, just like you do! We really appreciate you joining with us.</p>
+      <p class="strong">Your coupon code can be found in your welcome email.</p>
+
+       
+            <button onclick="location.href='shop.html';" id="thank" class="continue-button">Continue Shopping</button>
+            <br><br>
+            <button onclick="location.href='blog.html';" id="thank" class="continue-button">Continue Blogging</button>
+       
+      </div>
+  
+    </div>
+  </div>
+  </body>
+  </html>
